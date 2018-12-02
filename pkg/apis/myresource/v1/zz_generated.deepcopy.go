@@ -89,12 +89,8 @@ func (in *MyResourceSpec) DeepCopyInto(out *MyResourceSpec) {
 	*out = *in
 	if in.SomeValue != nil {
 		in, out := &in.SomeValue, &out.SomeValue
-		if *in == nil {
-			*out = nil
-		} else {
-			*out = new(int32)
-			**out = **in
-		}
+		*out = new(int32)
+		**out = **in
 	}
 	return
 }
