@@ -5,7 +5,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/orcore/k8s-controller-custom-resource/pkg/apis/myresource"
+	"github.com/orcore/k8s-controller-core-resource/pkg/apis/myresource"
 )
 
 // GroupVersion is the identifier for the API which includes
